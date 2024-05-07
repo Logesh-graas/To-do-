@@ -1,0 +1,76 @@
+body{
+    background-color: #8758ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .todo-view{
+    background-color: #fff;
+    width: 600px;
+    height: fit-content;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border-radius: 12px;
+  }
+
+  h1{
+    text-align: center;
+    font-size: 4rem;
+    color: hsl(0, 10%, 90%);
+  }
+
+  .input[type="text"]{
+    margin-top: 20px;
+    border-radius: 5px;
+    color: hsl(0, 0%, 40%);
+    font-size: 1.7rem;
+    padding: 10px;
+    border: 2px solid hsla(0, 0%, 80%, 0.5);
+  }
+
+  button{
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+
+    &.add-button{
+        background-color: hsl(183, 29%, 48%);
+        margin-right: 40px;
+        
+         &.add-button:hover{
+            background-color: hsl(0, 59%, 60%);;
+         }
+    }
+
+    &.delete-button{
+        background-color: hsl(183, 29%, 48%);
+        margin-right: 40px;
+        &.delete-button:hover{
+            background-color: hsl(0, 59%, 60%);
+        }
+    }
+  }
+
+  ol{
+    padding: 0;
+    list-style: none;
+    margin-top: 30px;
+    li{
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+      }
+  }
+
+  .task-view{
+    flex: 1;
+  }
+  
