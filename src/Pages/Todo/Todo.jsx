@@ -14,6 +14,13 @@ const Todo = () =>
         setNewtask(event.target.value);
     }
 
+    const handleKeyUp = (event) => {
+        if(event.key==='Enter')
+            {
+                addNewtask();
+            }
+    }
+
     const addNewtask= ()=>{
         if(!task.includes(newTask) && newTask !== ""){
             setTasks(t => [...t,newTask]);
@@ -39,7 +46,9 @@ const Todo = () =>
             <input 
                 type="text"
                 placeholder="Enter a task"
+                id="input"
                 value={newTask}
+                onKeyUp={handleKeyUp}
                 className="input"
                 onChange={inputtask}>
             </input>
